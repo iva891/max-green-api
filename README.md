@@ -21,6 +21,14 @@ npm run dev
 npm run build
 ```
 
+## Деплой (Vercel)
+
+1. Импортируйте репозиторий на [vercel.com/new](https://vercel.com/new) (GitHub → `max-green-api`).
+2. Framework Preset: **Vite**, Build Command: `npm run build`, Output: `dist`.
+3. Deploy — получите URL вида `https://max-green-api.vercel.app`.
+
+Прокси `/api/green` → `api.green-api.com` настроен в `vercel.json` (обход CORS в браузере).
+
 ## Как пользоваться
 
 1. В личном кабинете [GREEN-API](https://console.green-api.com/) создайте инстанс MAX и авторизуйте его.
