@@ -1,0 +1,60 @@
+:root {
+  --font-family-base: 'Roboto', system-ui, sans-serif;
+  --background-primary: #ffffff;
+  --background-secondary: #f4f6fb;
+  --background-chat: #dbeafe;
+  --text-primary: #1b1f23;
+  --text-secondary: #6b7280;
+  --accent: #2688eb;
+  --accent-hover: #1f74cc;
+  --bubble-incoming: #ffffff;
+  --bubble-outgoing: #d9f2ff;
+  --border-light: #e5e7eb;
+  --sidebar-width: 360px;
+  --shadow-soft: 0 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  color: var(--text-primary);
+  background: var(--background-secondary);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    max-height: 42vh;
+  }
+}
